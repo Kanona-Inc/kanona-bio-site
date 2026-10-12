@@ -1,0 +1,39 @@
+:root{color-scheme:light;--ink:#253551;--paper:#f7f8fa;--blue:#34517e;--line:#d9dfe7;font-family:Arial,Helvetica,sans-serif;color:var(--ink);font-synthesis:none}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:2rem}
+body{margin:0;background:white;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid #81bcff;outline-offset:6px}
+.skip-link{position:fixed;z-index:10;top:1rem;left:1rem;transform:translateY(-200%);background:white;color:var(--ink);padding:.9rem 1.25rem}
+.skip-link:focus{transform:translateY(0)}
+.hero{color:white;background:radial-gradient(ellipse at 97% 94%,#5da9d8 0%,transparent 52%),radial-gradient(ellipse at 18% 100%,#484ac5 0%,transparent 54%),linear-gradient(115deg,#15104e 0%,#203f5c 55%,#2b5684 100%);min-height:850px;min-height:max(850px,100svh)}
+.site-header{max-width:1600px;margin:auto;padding:10px 4%;display:flex;align-items:center;justify-content:space-between;gap:2rem}
+.brand{width:245px;display:block;flex-shrink:0}
+.brand img,.footer-brand img{display:block;width:100%;height:auto}
+.introduction{max-width:1560px;margin:0 auto;padding:118px 3% 100px;text-align:center}
+h1{margin:0;font-size:clamp(48px,6.25vw,96px);line-height:1.1;font-weight:700;font-style:italic;letter-spacing:-.035em;text-wrap:balance}
+.introduction p{max-width:670px;margin:52px auto 36px;font-size:clamp(20px,1.77vw,27px);line-height:1.7;font-weight:700;font-style:italic;text-wrap:pretty}
+.button{min-height:52px;padding:17px 25px;display:inline-flex;align-items:center;justify-content:center;gap:30px;font-weight:600;font-size:15px;border:1px solid transparent;transition:background-color .15s,color .15s}
+.button-light{background:white;color:var(--ink)}
+.button-light:hover{background:#e7effa}
+.button-dark{background:var(--ink);color:white}
+.button-dark:hover{background:#354d75}
+.contact{padding:105px 6%;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1600px;margin:auto;background:var(--paper)}
+h2{font-size:clamp(32px,3.2vw,49px);line-height:1.18;letter-spacing:-.035em;font-weight:600;margin:0}
+.contact-details{justify-self:start;width:100%;max-width:540px}
+.email-address{font-size:clamp(21px,2vw,30px);line-height:1.5;letter-spacing:-.025em;border-bottom:1px solid var(--ink);display:inline-block;padding-bottom:7px;overflow-wrap:anywhere}
+.email-address span{font-size:22px;margin-left:12px}
+.email-address:hover{color:#415fa0}
+.contact-details>p{font-size:16px;line-height:1.6;margin:20px 0 0}
+.site-footer{max-width:1600px;margin:auto;padding:27px 6%;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.footer-brand{display:block;width:160px;flex-shrink:0}
+.site-footer p{font-size:15px;line-height:1.6}
+.error-page{min-height:100svh;display:grid;place-items:center;padding:32px;background:var(--paper)}
+.error-content{max-width:680px;text-align:center}
+.error-content h1{font-style:normal;font-size:60px}
+.error-content p{font-size:19px;line-height:1.6;margin:24px 0}
+@media(min-width:1601px){.contact{max-width:none;grid-template-columns:minmax(0,650px) minmax(0,650px);justify-content:center}.introduction{padding-top:150px}}
+@media(max-width:800px){.hero{min-height:auto}.site-header{padding:4px 6%}.brand{width:190px}.introduction{padding:80px 7% 90px}h1{font-size:clamp(48px,8.9vw,70px);line-height:1.07}.introduction p{max-width:570px;font-size:21px;line-height:1.65;margin-top:35px}.contact{grid-template-columns:1fr;gap:40px;padding:70px 7%}.contact-details{max-width:none}.email-address{font-size:27px}.site-footer{padding:20px 7%}.site-footer p{max-width:230px;text-align:right}}
+@media(max-width:440px){.brand{width:170px}.introduction{padding-top:64px;padding-bottom:70px}h1{font-size:49px}.introduction p{font-size:19px;line-height:1.7;margin:30px auto}.button{min-height:52px}.contact{padding-top:60px;padding-bottom:52px;gap:32px}.email-address{font-size:23px}.email-address span{font-size:19px;margin-left:5px}.site-footer{align-items:flex-start;flex-direction:column;gap:0;padding-top:20px;padding-bottom:35px}.footer-brand{width:145px}.site-footer p{text-align:left;margin:0;max-width:none;font-size:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
